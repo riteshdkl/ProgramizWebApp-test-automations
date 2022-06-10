@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-06-10 17:03:09</p>
+                <p class='attribute'><strong>Duration: </strong>38.48 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 5, Pass: 0, Fail: 1, Skip: 4</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.programizPro</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='info'>
+                            <td class="col-xs-10">test_Interactive_python_course</td>
+                            <td class="col-xs-1">
+                                <span class="label label-info" style="display:block;width:40px;">Skip</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">test skipped</p>
+                            </td>
+                        </tr>
+                        <tr class='info'>
+                            <td class="col-xs-10">test_enroll_now_for_free_heading</td>
+                            <td class="col-xs-1">
+                                <span class="label label-info" style="display:block;width:40px;">Skip</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">test skipped</p>
+                            </td>
+                        </tr>
+                        <tr class='info'>
+                            <td class="col-xs-10">test_join_for_free_Heading</td>
+                            <td class="col-xs-1">
+                                <span class="label label-info" style="display:block;width:40px;">Skip</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">test skipped</p>
+                            </td>
+                        </tr>
+                        <tr class='info'>
+                            <td class="col-xs-10">test_join_for_free_button</td>
+                            <td class="col-xs-1">
+                                <span class="label label-info" style="display:block;width:40px;">Skip</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">test skipped</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_view_all_courses</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 22 != 15</p><p style="color:maroon;">Traceback (most recent call last):
+  File "d:\Programiz Intern\June 2022\programiz-testing\programiz-test-automations\programiz-com\homepage\programizProSection.py", line 99, in test_view_all_courses
+    self.assertEqual(len(list_new), len(actual_list))
+AssertionError: 22 != 15
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 5, Pass: 0, Fail: 1, Skip: 4 -- Duration: 38.48 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
