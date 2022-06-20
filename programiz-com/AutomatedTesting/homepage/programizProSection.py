@@ -17,7 +17,7 @@ class programizPro(unittest.TestCase):
         self.driver.execute_script("window.scrollTo(0,950)")
         time.sleep(2)
 
-    @unittest.skip("test skipped")
+    # @unittest.skip("test skipped")
     def test_join_for_free_Heading(self):
         expectedHeading = "Invest in coding Now\nfor a bright career!"
         heading = self.driver.find_element(
@@ -25,7 +25,7 @@ class programizPro(unittest.TestCase):
         )
         self.assertEqual(expectedHeading, heading.text)
 
-    @unittest.skip("test skipped")
+    # @unittest.skip("test skipped")
     def test_join_for_free_button(self):
         nonPro_url = self.driver.current_url
         self.driver.find_element(
@@ -34,14 +34,14 @@ class programizPro(unittest.TestCase):
         pro_url = "https://www.programiz.com/"
         self.assertEqual(nonPro_url, pro_url)
 
-    @unittest.skip("test skipped")
+    # @unittest.skip("test skipped")
     def test_enroll_now_for_free_heading(self):
         heading = self.driver.find_element(
             By.XPATH, '//*[@id="node-368"]/div/div[2]/div/div[2]/div/div[1]/div/h2'
         ).is_displayed()
         self.assertTrue(heading)
 
-    @unittest.skip("test skipped")
+    # @unittest.skip("test skipped")
     def test_Interactive_python_course(self):
         self.driver.find_element(
             By.XPATH, '//*[@id="node-368"]/div/div[2]/div/div[2]/div/div[2]/a[1]/div/h3'

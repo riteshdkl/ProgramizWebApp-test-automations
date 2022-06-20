@@ -17,7 +17,7 @@ class onlineCompilers(unittest.TestCase):
         self.driver.get("https://programiz.com")
         self.driver.execute_script("window.scrollTo(0, 1800)")
 
-    @unittest.skip("test skipped")
+    # @unittest.skip("test skipped")
     def test_sectionHeading(self):
         expectedHeading = "Practice with our Online Compilers"
         actualHeading = self.driver.find_element(
@@ -27,7 +27,7 @@ class onlineCompilers(unittest.TestCase):
 
         self.assertEqual(expectedHeading, actualHeading.text)
 
-    def test_pythonCompiler(self):
+        # def test_pythonCompiler(self):
         self.driver.find_element(
             By.XPATH, '//*[@id="node-368"]/div/div[3]/div/div/div[2]/div/a[1]/h5'
         ).click()
@@ -37,7 +37,7 @@ class onlineCompilers(unittest.TestCase):
 
         self.assertEqual(get_url, actual_url)
 
-    @unittest.skip("test skipped")
+    # @unittest.skip("test skipped")
     def test_javaCompiler(self):
         self.driver.find_element(
             By.XPATH, '//*[@id="node-368"]/div/div[3]/div/div/div[2]/div/a[5]/h5'

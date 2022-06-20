@@ -38,7 +38,8 @@ Feature: Language landing page
         When the user clicks on the "Examples" button
         Then the user should see the heading changed with the text
             """Python Examples"""
-        And the user should see the popular examples with the text
+        And the user should see the "Popular Examples" section
+        And the user should see the python examples cards displayed with the text
             | Python Program to Check Prime Number             |
             | Python Program to Add Two Numbers                |
             | Python Program to Find the Factorial of a Number |
@@ -66,7 +67,7 @@ Feature: Language landing page
         Given
         When the user clicks on "COMPILER" button
         Then the user should be redirected to the compiler page
-        And the user should see a clickable title logo with the text
+        And the user should see a heading with the text
             """Python Online Compiler"""
 
 
@@ -123,7 +124,7 @@ Feature: Language landing page
 
     Scenario: A user sees list of contents inside "Python Functions" card
 
-        Given
+
         When
         Then the user should see the list of contents with the text
             | Python Functions           |
@@ -203,10 +204,10 @@ Feature: Language landing page
         When
         Then the user should see the heading with the text
             """About Python Programming"""
-        And the user should also see the bullet points
-            | Free and open-source |
-            | Easy to learn        |
-            | Portable             |
+        And the user should also see the bullet points with the text
+            | Free and open-source - You can freely use and distribute Python, even for commercial use.                                                                        |
+            | Easy to learn  - Python has a very simple and elegant syntax. It's much easier to read and write Python programs compared to other languages like C++, Java, C#. |
+            | Portable - You can move Python programs from one platform to another, and run it without any changes                                                             |
 
 
     Scenario: A user sees the "Why Learn Python" Section
@@ -229,6 +230,11 @@ Feature: Language landing page
         Then the user should see the heading with the text
             """How to learn Python?"""
         And the user shoud also see the bullet points
+        And also the user should see the links
+            | Python Interactive Course |
+            | Get started with Python.  |
+            | Python tutorial.          |
+            | Learn Python app          |
 
 
 
