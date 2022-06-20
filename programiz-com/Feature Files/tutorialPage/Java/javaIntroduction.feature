@@ -10,7 +10,9 @@ Feature: Java Introduction Tutorial Page
         And also the user is visible to the Java Introduction card
         When the user clicks on the "Java Hello World" text
         Then the user should be redirected to java introduction page with the heading text
-            """Java Hello World Program"""
+            """
+            Java Hello World Program
+            """
 
 
     Background: The user is on the programiz.com/python-programming/hello-world page
@@ -21,7 +23,9 @@ Feature: Java Introduction Tutorial Page
         When the user clicks on "Java comments" text
         Then the user is redirected to the java comments page
         And the user should see the heading with the text
-            """Java Comments"""
+            """
+            Java Comments
+            """
 
     Scenario: A user clicks on the "Run Code" button on the Single-line Comment section
 
@@ -29,7 +33,9 @@ Feature: Java Introduction Tutorial Page
         When the user clicks on the "Run Code" button
         Then the user should be redirected to the "online python compiler" page on the next tab
         And also the user should see the title of the page with the text
-            """Online Java Compiler"""
+            """
+            Online Java Compiler
+            """
 
 
     Scenario: A user clicks on Next Tutorial button on pagination section
@@ -37,4 +43,6 @@ Feature: Java Introduction Tutorial Page
         Given the user is visible to the next tutorial button
         When the user clicks on the next tutorial button
         Then the user should be redirected to the next following tutorial with the heading text
-            """Java JDK, JRE and JVM"""
+            """
+            Java JDK, JRE and JVM
+            """

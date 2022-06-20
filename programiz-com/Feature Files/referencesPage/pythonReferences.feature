@@ -21,6 +21,8 @@ Feature: Python References Page
         Given the use is visible to the "Python any()" text
         When the user clicks on "Python any()" text
         Then the user is redirected to the page wit the heading text
-            """Python any()"""
+            """
+            Python any()
+            """
 
 

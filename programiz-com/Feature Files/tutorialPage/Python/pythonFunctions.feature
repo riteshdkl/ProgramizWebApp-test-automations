@@ -46,7 +46,9 @@ Feature: Python Functions Tutorial Page
         When the user clickson the "Python Global Keyword" text
         Then the user is redirected to the "Python Global Keyword" page
         And also the user should see the heading of the page with the text
-            """Python Global Keyword"""
+            """
+            Python Global Keyword
+            """
 
 
     Scenario: A user clicks on the "Run Code" button on the your Scope and Lifetime of variables section
@@ -55,7 +57,9 @@ Feature: Python Functions Tutorial Page
         When the user clicks on the "Run Code" button
         Then the user should be redirected to the "online python compiler" page on the next tab
         And also the user should see the heading of the page with the text
-            """Python Online Compiler"""
+            """
+            Python Online Compiler
+            """
 
 
     Scenario: A user clicks on "Previous Tutorial" button on pagination section

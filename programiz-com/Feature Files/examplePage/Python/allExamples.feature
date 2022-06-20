@@ -12,7 +12,9 @@ Feature: Python All Examples
         And the user is visible to the "Python Program to Print Hello world!" text
         When the user clicks  on "Python Program to Print Hello world!" text
         Then the user should be redirected to the hello-world example page with the heading text
-            """Python Program to Print Hello world!"""
+            """
+            Python Program to Print Hello world!
+            """
 
     Scenario: A user clicks on "How to Get Started With Python?" text on print hello world example page
 
@@ -20,7 +22,9 @@ Feature: Python All Examples
         And the user is visible to the "How to Get Started With Python?" text
         When the user clicks on the "How to Get Started With Python?" text
         Then the user should be redirected to the page with the heading text
-            """How to Get Started With Python?"""
+            """
+            How to Get Started With Python?
+            """
 
     Scenario: A user clicks on "Convert Kilometers to Miles" text on the Python Examples Card
 

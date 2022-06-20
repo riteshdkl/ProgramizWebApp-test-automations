@@ -9,7 +9,7 @@ def wait():
     time.sleep(10)
 
 
-class links(unittest.TestCase):
+class Pagelinks(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.maximize_window()

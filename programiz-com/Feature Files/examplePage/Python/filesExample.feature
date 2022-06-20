@@ -16,5 +16,7 @@ Feature: Python Files Examples
         And the user is visible to the "Python Program to Check the File Size" text
         When the user clicks on the "Python Program to Check the File Size" text
         Then the user is redirected to the page with the heading text
-            """Python Program to Check the File Size"""
+            """
+            Python Program to Check the File Size
+            """
 

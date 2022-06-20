@@ -7,37 +7,47 @@ Feature: Language landing page
     Background: The user is on the python-programming page
 
     Scenario: A user sees "Learn Python Programming" heading
-        Given
-        When
+
+        When the user is visible to the texts on the website
         Then the user should see the heading with the text
-            """Learn Python Programming"""
+            """
+            Learn Python Programming
+            """
 
     Scenario: A user clicks on the "Try PRO for FREE" button
-        Given
+
         When the user clicks on the "Try PRO for FREE" on the navbar
         Then the user should be redirected to the "https://programiz.pro/learn/master-python" link
         And the user should the heading with the text
-            """Become a Python Master"""
+            """
+            Become a Python Master
+            """
 
     Scenario: A user clicks on the "Tutorials" button
-        Given
+
         When the user clicks on the "Tutorials" button
         Then the homepage should be refreshed
         And the user should see the heading with the text
-            """Learn Python Programming"""
+            """
+            Learn Python Programming
+            """
 
     Scenario: A user clicks on the "Course" button
-        Given
+
         When the user clicks on the "Course" button
         Then the user should be redirected to the "https://programiz.pro/learn/master-python" link
         And the user should see the heading with the text
-            """Become a Python Master"""
+            """
+            Become a Python Master
+            """
 
     Scenario: A user clicks on the "Examples" button
-        Given
+
         When the user clicks on the "Examples" button
         Then the user should see the heading changed with the text
-            """Python Examples"""
+            """
+            Python Examples
+            """
         And the user should see the "Popular Examples" section
         And the user should see the python examples cards displayed with the text
             | Python Program to Check Prime Number             |
@@ -49,7 +59,7 @@ Feature: Language landing page
 
     Scenario: A user clicks on "REFERENCES" button
 
-        Given
+
         When the user clicks on the "REFERENCES" button
         Then the user should see the heading changed with the text
             """Python References"""
@@ -64,24 +74,27 @@ Feature: Language landing page
 
     Scenario: A user clicks on "COMPILER" button
 
-        Given
+
         When the user clicks on "COMPILER" button
         Then the user should be redirected to the compiler page
         And the user should see a heading with the text
-            """Python Online Compiler"""
+            """
+            Python Online Compiler
+            """
 
 
     Scenario: A user clicks on the "Interactive Python Course" Link
-        Given
+
         When the user clicks on the "Interactive Python Course" Link
         Then the user should be redirected to the "https://programiz.pro/learn/master-python" link
         And the user should see the heading with the text
-            """Become a Python Master"""
+            """
+            Become a Python Master
+            """
 
     Scenario: A user sees list of contents inside "Page Index" card
 
-        Given
-        When
+        When the user is visible to the texts
         Then the user should see the list of contents with the text
             | Introduction             |
             | Flow Control             |
@@ -98,8 +111,8 @@ Feature: Language landing page
 
     Scenario: A user sees list of contents inside "Introduction" card
 
-        Given
-        When
+
+        When the user is visible to the texts
         Then the user should see the list of contents with the text
             | Getting Started          |
             | Keywords and Identifiers |
@@ -113,8 +126,8 @@ Feature: Language landing page
 
     Scenario: A user sees list of contents inside "Python Flow Control" card
 
-        Given
-        When
+
+        When the user is visible to the texts
         Then the user should see the list of contents with the text
             | Python if...else          |
             | Python for Loop           |
@@ -125,7 +138,7 @@ Feature: Language landing page
     Scenario: A user sees list of contents inside "Python Functions" card
 
 
-        When
+        When the user is visible to the texts
         Then the user should see the list of contents with the text
             | Python Functions           |
             | Function Argument          |
@@ -138,8 +151,8 @@ Feature: Language landing page
 
     Scenario: A user sees list of contents inside "Python Datatypes" card
 
-        Given
-        When
+
+        When the user is visible to the texts
         Then the user should see the list of contents with the text
             | Python Numbers    |
             | Python List       |
@@ -150,8 +163,7 @@ Feature: Language landing page
 
     Scenario: A user sees list of contents inside "Python Files" card
 
-        Given
-        When
+        When the user is visible to the texts
         Then the user should see the list of contents with the text
             | Python File Operation         |
             | Python Directory              |
@@ -162,8 +174,8 @@ Feature: Language landing page
 
     Scenario: A user sees list of contents inside "Python Object & Class" card
 
-        Given
-        When
+
+        When the user is visible to the texts
         Then the user should see the list of contents with the text
             | Python OOP           |
             | Python Class         |
@@ -173,8 +185,7 @@ Feature: Language landing page
 
     Scenario: A user sees the list of contents inside "Python Advanced Topics" card
 
-        Given
-        When
+        When the user is visible to the texts
         Then the user should see the list of contents with the text
             | Python Iterator   |
             | Python Generator  |
@@ -186,8 +197,7 @@ Feature: Language landing page
 
     Scenario: A user sees the list of contents inside "Python Date & Time" card
 
-        Given
-        When
+        When the user is visible to the texts
         Then the user should see the list of contents with the text
             | Python datetime Module     |
             | Python datetime.strftime() |
@@ -200,10 +210,12 @@ Feature: Language landing page
 
 
     Scenario: A user sees the "About Python Programming" section
-        Given
-        When
+
+        When the user is visible to the texts
         Then the user should see the heading with the text
-            """About Python Programming"""
+            """
+            About Python Programming
+            """
         And the user should also see the bullet points with the text
             | Free and open-source - You can freely use and distribute Python, even for commercial use.                                                                        |
             | Easy to learn  - Python has a very simple and elegant syntax. It's much easier to read and write Python programs compared to other languages like C++, Java, C#. |
@@ -212,10 +224,12 @@ Feature: Language landing page
 
     Scenario: A user sees the "Why Learn Python" Section
 
-        Given
-        When
+
+        When the user is visible to the texts
         Then the user should see the heading with the text
-            """Why Learn Python?"""
+            """
+            Why Learn Python?
+            """
         And the user shoud also see the bullet points with the text
             | Python is easy to learn. Its syntax is easy and code is very readable.                                                               |
             | Python has a lot of applications. It's used for developing web applications, data science, rapid application development, and so on. |
@@ -225,10 +239,12 @@ Feature: Language landing page
 
     Scenario: A user sees the "How to learn Python?" section
 
-        Given
-        When
+
+        When the user is visible to the texts
         Then the user should see the heading with the text
-            """How to learn Python?"""
+            """
+            How to learn Python?
+            """
         And the user shoud also see the bullet points
         And also the user should see the links
             | Python Interactive Course |

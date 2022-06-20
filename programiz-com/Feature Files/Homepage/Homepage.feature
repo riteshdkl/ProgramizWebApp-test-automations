@@ -13,7 +13,9 @@ Feature: programiz.com Homepage
         When the user clicks on the programiz logo
         Then the homepage should reload
         And the user should see the title text
-            """Programiz: Learn to Code for Free"""
+            """
+            Programiz: Learn to Code for Free
+            """
 
 
     Scenario: A user clicks on the tutorials dropdown
@@ -22,16 +24,19 @@ Feature: programiz.com Homepage
         When the user clicks on the tutorials dropdown
         Then the user should see the list of courses available
             | Python |
-        And inside the python course the user should see """ENROLL FOR FREE!""","""All Python Tutorials""", """View all""" buttons
-            | SQl        |
-            | JavaScript |
-            | C          |
-            | C++        |
-            | Java       |
-            | Kotlin     |
-            | Swift      |
-            | C#         |
-            | DSA        |
+        And inside the python course the user should see buttons with the text
+            | ENROLL FOR FREE!     |
+            | All Python Tutorials |
+            | View all             |
+            | SQl                  |
+            | JavaScript           |
+            | C                    |
+            | C++                  |
+            | Java                 |
+            | Kotlin               |
+            | Swift                |
+            | C#                   |
+            | DSA                  |
 
 
     Scenario: A user clicks on the exmaples dropdown
@@ -42,10 +47,12 @@ Feature: programiz.com Homepage
             | Python     |
             | JavaScript |
             | C          |
-        And inside the C examples the user should see """ENROLL FOR FREE!""" and """All C Examples""" buttons
-            | C++    |
-            | Java   |
-            | Kotlin |
+        And inside the C examples the user should see buttons with the text
+            | ENROLL FOR FREE! |
+            | All C Examples   |
+            | C++              |
+            | Java             |
+            | Kotlin           |
 
 
 
@@ -64,11 +71,13 @@ Feature: programiz.com Homepage
     Scenario: A user is visible to the heading and pagragraph of the heading section
 
         Given the user is on to the heading section
-        When
+        When the user is visible to the texts
         Then the user should see the heading with text
             """Learn to Code for Free"""
         And the user should see the paragraph with text
-            """Learn to code with our beginner-friendly tutorials and examples. Read tutorials and examples, write programs, run code and learn to code."""
+            """
+            Learn to code with our beginner-friendly tutorials and examples. Read tutorials and examples, write programs, run code and learn to code.
+            """
 
 
     Scenario: A user subscribe for the latest tutorials and updates
@@ -76,15 +85,20 @@ Feature: programiz.com Homepage
         Given the user is visible to the """Enter your email address""" placeholder on the heading section
         When the user enters an email id
         And the user clicks on the Subscribe button
-        Then the user should see """Thank you for subscribing!""" message on the screen
+        Then the user should see a message on the screen with the text
+            """
+            Thank you for subscribing!
+            """
 
 
     Scenario: A user visible to the """Choose what to learn""" heading of the heading section
 
         Given the user is on the heading section
-        When
+        When the user is visible to the text
         Then the user should see the heading with the text
-            """Choose what to learn"""
+            """
+            Choose what to learn
+            """
 
 
     Scenario: A user clicks on """Learn Python""" button
@@ -93,7 +107,9 @@ Feature: programiz.com Homepage
         When the user clicks on """Learn python""" button
         Then the user should be redirected to the """Learn Python Programming""" page
         And the user should heading with the text
-            """Learn Python Programming"""
+            """
+            Learn Python Programming
+            """
 
 
     Scenario: A user clicks on """View all tutorials""" button
@@ -119,9 +135,11 @@ Feature: programiz.com Homepage
     Scenario: A user is visible to the """Programiz PRO Prepare for Your Career""" heading of the programizpro section
 
         Given the user is on the programizpro section
-        When
+        When the user is visible to the texts
         Then the user should see the heading with text
-            """Programiz Pro\nPrepare for Your Career"""
+            """
+            Programiz Pro\nPrepare for Your Career
+            """
 
 
     Scenario: A user clicks on """Join for FREE""" button
@@ -129,7 +147,7 @@ Feature: programiz.com Homepage
         Given the user is visible to the "Join for FREE" button on the programizpro section
         When the user clicks on the """Join for FREE""" button
         Then the user should be redirected to the "programiz.pro" website
-        And the user should see the """ProgramizPRO""" logo on the navbar section
+        And the user should see the |ProgramizPRO| logo on the navbar section
 
 
     Scenario: A user clicks on "Interative Python Course" course card on Enroll Now for FREE Section
@@ -170,9 +188,11 @@ Feature: programiz.com Homepage
     Scenario: A user is visible to the """Practice with our Online Compilers""" heading of the onlineCompilers section
 
         Given the user is on the onlineCompilers section
-        When
+        When the user is visible to the texts
         Then the user should see the heading with the text
-            """Practice with our Online Compilers"""
+            """
+            Practice with our Online Compilers
+            """
 
 
 
@@ -185,14 +205,16 @@ Feature: programiz.com Homepage
             """
         Then the user is redirected to "programiz.com/python-programming/online-compiler" website
         And the user should see the heading with the text
-            """Python Online Compiler"""
+            """
+            Python Online Compiler
+            """
 
 
 
     Scenario: A user is visible to "why programiz?" heading of the whyProgramiz Section
 
         Given the user is on the whyProgramiz section
-        When
+        When the user is visible to the texts
         Then the user should see the contents with these texts
             """
             (tick icon)Programming made easy
@@ -203,9 +225,11 @@ Feature: programiz.com Homepage
     Scenario: A user is visible to "Learn on the Go: Programiz for iOS & Android" heading of the mobileApplication section
 
         Given the user is on the mobileApp section
-        When
+        When the user is visible to the texts
         Then the user should see the heading with the text
-            """Learn on the Go: Programiz for iOS & Android"""
+            """
+            Learn on the Go: Programiz for iOS & Android
+            """
 
 
     Scenario: A user clicks on "Learn C App" mobile app card on mobileApp Section
@@ -217,7 +241,9 @@ Feature: programiz.com Homepage
             """
         Then the user should be redirected to "programiz.com/learn-python" website
         And the user should see the heading with the text
-            """Learn C Programming on the Go"""
+            """
+            Learn C Programming on the Go
+            """
 
     Scenario: A user clicks on "View all mobile apps" card on the mobileApp section
 
@@ -242,7 +268,9 @@ Feature: programiz.com Homepage
         When the user clicks on the about button
         Then the user should be redirected to the About page
         And the user should see the contents heading with the text
-            """4.9 Million monthly users rely on Programiz to learn programming"""
+            """
+            4.9 Million monthly users rely on Programiz to learn programming
+            """
 
 
 

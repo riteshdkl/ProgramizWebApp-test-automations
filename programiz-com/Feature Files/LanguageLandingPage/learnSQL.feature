@@ -8,9 +8,11 @@ Feature: Language landing page
 
     Scenario: A user sees "Learn SQL: SQL Tutorial for Beginners" heading
         Given the user is on the heading section
-        When the user
+        When the user is visible to the text
         Then the user should see the heading with the text
-            """Learn SQL: SQL Tutorial for Beginners"""
+            """
+            Learn SQL: SQL Tutorial for Beginners
+            """
 
     Scenario: A user clicks on "TUTORIALS" button
         Given the user is visible to the "TUTORIALS" button on the heading section
